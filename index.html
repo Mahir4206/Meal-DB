@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meal DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .card {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-warning fs-1">The Meal DB</h1>
+    </header>
+    <main>
+        <section class="text-center">
+            <input id="search-field" class="py-1 px-3 text-center" type="text" placeholder="Search preffered Food">
+            <button onclick="searchFood()" class="btn btn-primary">search</button>
+        </section>
+        <section class="container w-25 mx-auto mt-4">
+            <div id="getCard" style="width: 28rem;">
+
+            </div>
+        </section>
+        <section class="container">
+            <h3>Exploring Foods</h3>
+            <div id="food-container" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
